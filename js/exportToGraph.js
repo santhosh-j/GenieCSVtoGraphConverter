@@ -1,5 +1,5 @@
 let neo4j = require('neo4j-driver').v1;
-var driver = neo4j.driver("bolt://192.168.1.116", neo4j.auth.basic("neo4j", "santh205554"));
+var driver = neo4j.driver("bolt://192.168.1.116", neo4j.auth.basic("neo4j", "neo4js"));
 let query = `MATCH (n:player{name:'nehra'})-[s:knows]->(m:player{name:'yuvi'}) return n,m,s`;
 // let session = driver().session();
 
